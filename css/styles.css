@@ -1,0 +1,247 @@
+#content{
+    display: grid;
+    grid-template-areas:
+        "header       navigation"
+        "mainproject  mainprojectimg"
+        "otherprojects otherprojects"
+        "aboutme contact";
+    grid-template-columns: 60% auto;
+}  
+
+
+body{
+    margin: 50px;
+    font-family: Tahoma, sans-serif;
+    font-size: 1.2em;
+}
+
+h1{
+    color: #95756B;
+    text-align: left;
+}
+
+h3{
+    background-color: #ACC9D8;
+    text-align: center;
+}
+
+h4{
+    font-size: 2em;
+    text-align: center;
+}
+
+#aboutme h4{
+    color: black;
+}
+
+ul.navigation{ 
+    font-family: Tahoma, sans-serif;
+    grid-area: navigation; 
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.navigation a{
+    display: block;
+    padding: 10px;
+    font-size: 2em;
+    text-decoration: none;
+    background-color: #b9d9e9;
+}
+
+a:link{
+    color: black;
+}
+
+a:visited{
+    color: #513e5c;
+}
+
+a:focus{
+    color: green;
+}
+
+a:hover{
+    color: rgb(134, 56, 168);
+}
+
+.navigation a:hover{
+    background-color: #4991e9;
+    text-decoration: underline;
+}
+
+
+a:active{
+    color: rgb(2, 87, 87);
+}
+
+header{ 
+    grid-area: header; 
+    font-size: 2em;  
+}
+
+#mainproject { 
+    grid-area: mainproject;
+    padding: 30px;
+}
+
+#mainprojectimg { 
+    grid-area: mainprojectimg; 
+    padding: 30px;
+    text-align: center;
+    margin: 20px;
+    background-color: #b9d9e9;
+    position: relative;
+
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "img img"
+    "buttons buttons";
+
+    h4 {
+        grid-area: header;
+    }
+
+    #galleryImg{
+        grid-area: img;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    #galleryButtons{
+        grid-area: buttons;
+        text-align: center;
+
+        #galleryNext, #galleryPrevious{
+            font-size: 25px;
+            display : inline-block;
+            cursor : pointer;
+            background-color: #2D387A;
+            border-style : none;
+            border-radius : 5px;
+            color : #fff;
+            padding-top: 4px;
+            padding-bottom: 4px;
+    
+        }
+
+        #galleryNext:hover, #galleryPrevious:hover{
+            background-color: #1c244f;
+        }
+    
+        #galleryNext:active, #galleryPrevious:active{
+            background-color: #4355b8;
+        }
+    }
+
+
+}
+
+#aboutme { 
+    grid-area: aboutme;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#otherprojects { 
+    grid-area: otherprojects;
+    background-color: #b9d9e9;
+    padding: 30px;
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "othercontent img"
+    "buttons buttons";
+
+    grid-template-columns: 60% 40%;
+    h4 {
+        grid-area: header;
+    }
+
+    h5{
+        text-align: center;
+    }
+
+    #othercontent{
+        grid-area: othercontent;
+    }
+
+    #otherimg{
+        grid-area: img;
+        img {
+            max-width: 100%;
+        }
+    }
+    #buttons{
+        grid-area: buttons;
+        text-align: center;
+    }
+
+    #next, #previous{
+        font-size: 25px;
+        display : inline-block;
+        cursor : pointer;
+        background-color: #2D387A;
+        border-style : none;
+        border-radius : 5px;
+        color : #fff;
+        padding-top: 4px;
+        padding-bottom: 4px;
+
+    }
+
+    #next:hover, #previous:hover{
+        background-color: #1c244f;
+    }
+
+    #next:active, #previous:active{
+        background-color: #4355b8;
+    }
+}
+
+#contact{
+    grid-area: contact;
+}
+
+#contact ul{
+    font-size: 1.5em;
+}
+
+#otherimgs{
+    grid-area: otherimgs;
+    background-color: #b9d9e9;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+
+@media screen and (max-width: 900px){
+    #content{
+        display: grid;
+        grid-template-areas: "header" "navigation" "mainproject" "mainprojectimg" "otherprojects" "aboutme" "contact";
+        max-width: 100vw;
+    }
+
+    #mainprojectimg img
+    {
+        max-width: 75%;
+    }
+
+    #otherimgs{
+        background-color: white;
+    }
+
+    #otherimgs img{
+        max-width: 75%;
+    }
+
+    h1{
+        text-align: center;
+    }
+}
