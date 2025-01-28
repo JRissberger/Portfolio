@@ -106,13 +106,24 @@ function viewProject()
     {
         case 0:
             document.querySelector("#othercontent").innerHTML = 
-            "TEST TEST TEST";
+            "<h5>Genetically Engineered Bubbles</h5>" +
+            "<p>Create bubbles out of a variety of strange materials, then pit them against each other in a battle simulation! </p>" +
+            "<ul>" +
+                "<li>Worked with 2 other people to create this game in Godot over the course of 48 hours for the 2025 Global Game Jam.</li>" +
+                "<li>Developed the “creation screen”, where the player drags and drops their selected materials and the stats of the created bubble are calculated based on the materials placed in the bowl.</li>" +
+                "<li>Programmed a system to dynamically update the images of the custom bubbles in the arena to accurately reflect the materials selected by the player.</li>" +
+               "<li>Assisted in the creation the mechanics used to store and transfer the player's created bubble stats to the opponent bubble after the player's bubble wins a battle.</li>
+                "<li><a href = 'https://globalgamejam.org/games/2025/4'>Site Link</a></li>" + 
+               "<li><a href = 'https://github.com/JRissberger/bubble'>Github</a></li>" +
+            "</ul>";
+             document.querySelector("#otherimg").innerHTML = 
+            "<img src = 'media/bubble.png' alt = 'gameplay screenshot of bubble creation screen'></img>";
             break;
         //card flip game
         case 1:
             document.querySelector("#othercontent").innerHTML = 
             "<h5>Card Flip Game</h5>" +
-            "<p>In this unofficial Pokemon fan game, match as many cards as you can before you run out of moves or time." +
+            "<p>Match as many cards as you can before you run out of moves or time in this unofficial Pokemon fan game." +
                 " Scoring is based on the elemental type the player is assigned, and how it matches up against the flipped card's elemental type. </p>" +
             "<ul>" +
                 "<li>Solo project created using HTML, CSS, and JavaScript.</li>" +
