@@ -112,7 +112,7 @@ function viewProject()
                 "<li>Worked with 2 other people to create this game in Godot over the course of 48 hours for the 2025 Global Game Jam.</li>" +
                 "<li>Developed the “creation screen”, where the player drags and drops their selected materials and the stats of the created bubble are calculated based on the materials placed in the bowl.</li>" +
                 "<li>Programmed a system to dynamically update the images of the custom bubbles in the arena to accurately reflect the materials selected by the player.</li>" +
-               "<li>Assisted in the creation the mechanics used to store and transfer the player's created bubble stats to the opponent bubble after the player's bubble wins a battle.</li>
+               "<li>Assisted in the creation the mechanics used to store and transfer the player's created bubble stats to the opponent bubble after the player's bubble wins a battle.</li>" +
                 "<li><a href = 'https://globalgamejam.org/games/2025/4'>Site Link</a></li>" + 
                "<li><a href = 'https://github.com/JRissberger/bubble'>Github</a></li>" +
             "</ul>";
@@ -174,7 +174,7 @@ function initialProjectView()
                 "<li>Worked with 2 other people to create this game in Godot over the course of 48 hours for the 2025 Global Game Jam.</li>" +
                 "<li>Developed the “creation screen”, where the player drags and drops their selected materials and the stats of the created bubble are calculated based on the materials placed in the bowl.</li>" +
                 "<li>Programmed a system to dynamically update the images of the custom bubbles in the arena to accurately reflect the materials selected by the player.</li>" +
-               "<li>Assisted in the creation the mechanics used to store and transfer the player's created bubble stats to the opponent bubble after the player's bubble wins a battle.</li>
+               "<li>Assisted in the creation the mechanics used to store and transfer the player's created bubble stats to the opponent bubble after the player's bubble wins a battle.</li>" 
                 "<li><a href = 'https://globalgamejam.org/games/2025/4'>Site Link</a></li>" + 
                "<li><a href = 'https://github.com/JRissberger/bubble'>Github</a></li>" +
             "</ul>";
