@@ -117,7 +117,7 @@ function viewProject()
                "<li><a href = 'https://github.com/JRissberger/bubble'>Github</a></li>" +
             "</ul>";
              document.querySelector("#otherimg").innerHTML = 
-            "<img src = 'media/bubble.png' alt = 'gameplay screenshot of bubble creation screen'></img>";
+            "<img src = 'media/bubble.PNG' alt = 'gameplay screenshot of bubble creation screen'></img>";
             break;
         //card flip game
         case 1:
@@ -179,5 +179,5 @@ function initialProjectView()
                "<li><a href = 'https://github.com/JRissberger/bubble'>Github</a></li>" +
             "</ul>";
              document.querySelector("#otherimg").innerHTML = 
-            "<img src = 'media/bubble.png' alt = 'gameplay screenshot of bubble creation screen'></img>";
+            "<img src = 'media/bubble.PNG' alt = 'gameplay screenshot of bubble creation screen'></img>";
 }
